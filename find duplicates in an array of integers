@@ -1,0 +1,27 @@
+const arr = [1, 3, 4, 5, 8, 4, 2, 1];
+
+//brute force method by using linear search which will be of O(n2)
+const result = [];
+arr.forEach((value, i) => { // O(n)
+  if(arr.filter(v=> v==value).length > 1)  // filter is another O(n)
+  {
+  result.push(value)
+  }
+})
+
+///solution with O(n)
+
+// create a hashMap with index/ count of occurence
+const result = {}
+arr.forEach((v, i) => {
+  if(result[v]) {
+    result[v].push(i)
+  } else {
+    result[v]=[i]
+  }
+})
+
+// to do with out an extra space
+
+
+
