@@ -1,0 +1,13 @@
+// eg arr = [1, 2, 0, 0,1, 1, 2, 2]
+// output should be [0,0,1,1,1,2,2,2]
+
+1st solution 
+count the number of 0s, 1s and 2s and create an array of that many 0's and push those many 1 and 2s.
+time complexsity O(N) to find the number of digits and another O(N to create the sorted array.
+space complexity is 1 which will store N numbers
+
+2nd solution 
+
+consider 3 pointers
+min mid will point to 0th position ang high will point to last index.
+depending on the mid value will take the move
